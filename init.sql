@@ -29,10 +29,3 @@ VALUES
 (3, 'アウトドア派の太った瀬戸康史です…どうも…'),
 (3, 'このままじゃ寒すぎてサムポーターズブリッジになっちゃう'),
 (3, '飲んじゃお！w');
-CREATE TABLE favorites(
-    id INTEGER PRIMARY KEY AUTOINCREMENT,
-    user_id INTEGER NOT NULL,
-    tweet_id INTEGER NOT NULL,
-    FOREIGN KEY (user_id) REFERENCES users(id),
-    FOREIGN KEY (tweet_id) REFERENCES tweets(id)
-);
